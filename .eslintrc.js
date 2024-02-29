@@ -1,9 +1,14 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "node": true,
+        "jest": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+        "eslint:recommended",
+        "plugin:jest/recommended"
+    ],
     "overrides": [
         {
             "env": {
@@ -21,6 +26,9 @@ module.exports = {
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
+    "plugins": [
+      "jest"
+    ],
     "rules": {
     }
 }
